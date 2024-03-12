@@ -1,5 +1,5 @@
 import streamlit as st
-import en_core_web_sm
+import spacy
 import fitz
 from scipy import spatial
 from nltk.tokenize import word_tokenize
@@ -9,7 +9,7 @@ import base64
 import pandas as pd
 import docx2txt
 
-nlp = en_core_web_sm.load()
+nlp = spacy.load("en_core_web_sm")
 
 st.title("ResumeRank: Scoring Candidate's Employment Match")
 
