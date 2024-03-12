@@ -110,6 +110,7 @@ if st.button("Match Resume to Job"):
     else:
         st.error("Please upload both job description and resume PDFs.")
 
+'''
 if resume_file is not None:
     # Read the uploaded file
     file_extension = resume_file.name.split('.')[-1]
@@ -145,3 +146,4 @@ if resume_file is not None:
     # Display the extracted entities in a table
     st.header("Extracted Entities in Tabular format:")
     st.dataframe(df)
+'''
